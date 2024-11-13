@@ -11,7 +11,7 @@ public class AdminHome {
 
 	JFrame frame;
 	JLabel header;
-	JButton add,delete,view,logout;
+	JButton add,delete,view,empView,logout;
 	
 	public AdminHome() {
 		frame= new JFrame("DevElet intstitute - Admin Home");
@@ -20,15 +20,17 @@ public class AdminHome {
 		
 		add=new JButton("Add Employee");
 		delete = new JButton("Delete Employee");
+		empView = new JButton("View Employees Details");
 		view = new JButton("View Student Details");
 		
 		Container container = frame.getContentPane();
 		container.setLayout(new FlowLayout());
 		container.add(header);
-		container.add(logout);
 		container.add(add);
 		container.add(delete);
+		container.add(empView);
 		container.add(view);
+		container.add(logout);
 		
 		frame.setVisible(true);
 		frame.setSize(500,500);
@@ -54,6 +56,14 @@ public class AdminHome {
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
 				new DeleteEmployee();
+			}
+		});
+		
+		empView.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				frame.dispose();
+				new ViewEmployee();				
 			}
 		});
 		

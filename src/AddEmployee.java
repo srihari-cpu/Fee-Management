@@ -43,7 +43,6 @@ public class AddEmployee {
 		container.setLayout(new FlowLayout());
 		
 		container.add(header);
-		container.add(logout);
 		container.add(segment);
 		container.add(fname);
 		container.add(first);
@@ -53,6 +52,7 @@ public class AddEmployee {
 		container.add(password);
 		container.add(submit);
 		container.add(clear);
+		container.add(logout);
 		
 		frame.setVisible(true);
 		frame.setSize(500,500);
@@ -61,7 +61,7 @@ public class AddEmployee {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
-				new EmployeeLogin();
+				new AdminLogin();
 			}
 		});
 		

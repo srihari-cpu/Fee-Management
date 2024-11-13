@@ -51,7 +51,6 @@ public class AddStudent {
 		Container container=frame.getContentPane();
 		container.setLayout(new FlowLayout());
 		container.add(header);
-		container.add(logout);
 		container.add(segment);
 		container.add(id);
 		container.add(i);
@@ -67,6 +66,7 @@ public class AddStudent {
 		container.add(ab);
 		container.add(submit);
 		container.add(clear);
+		container.add(logout);
 		
 		frame.setVisible(true);
 		frame.setSize(500,500);

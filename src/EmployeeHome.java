@@ -26,11 +26,11 @@ public class EmployeeHome {
 		Container container=frame.getContentPane();
 		container.setLayout(new FlowLayout());
 		container.add(header);
-		container.add(logout);
 		container.add(add);
 		container.add(delete);
 		container.add(update);
 		container.add(view);
+		container.add(logout);
 		
 		frame.setVisible(true);
 		frame.setSize(500,500);

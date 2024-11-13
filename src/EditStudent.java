@@ -31,14 +31,17 @@ public class EditStudent {
 		
 		name=new JLabel("Student Name");
 		n=new JTextField(30);
+		n.setEditable(false);
 		course = new JLabel("Course");
 		c = new JComboBox<String>();
 		for(String s:courselist) {
 			c.addItem(s);
 		}
+		c.setEnabled(false);
 		
 		totalfees=new JLabel("Total Fees");
 		tf=new JTextField(20);
+		tf.setEditable(false);
 		amountpaid=new JLabel("Amount Paid");
 		ap=new JTextField(20);
 		amountbalance=new JLabel("Amount Balance");
@@ -56,7 +59,6 @@ public class EditStudent {
 		Container container=frame.getContentPane();
 		container.setLayout(new FlowLayout());
 		container.add(header);
-		container.add(logout);
 		container.add(segment);
 		container.add(name);
 		container.add(n);
@@ -70,6 +72,7 @@ public class EditStudent {
 		container.add(ab);
 		container.add(submit);
 		container.add(clear);
+		container.add(logout);
 		
 		frame.setVisible(true);
 		frame.setSize(500,500);

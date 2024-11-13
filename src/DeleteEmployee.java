@@ -34,11 +34,11 @@ public class DeleteEmployee {
 		container.setLayout(new FlowLayout());
 		
 		container.add(header);
-		container.add(logout);
 		container.add(segment);
 		container.add(username);
 		container.add(user);
 		container.add(submit);
+		container.add(logout);
 		
 		frame.setVisible(true);
 		frame.setSize(500,500);
@@ -47,7 +47,7 @@ public class DeleteEmployee {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				frame.dispose();
-				new EmployeeLogin();
+				new AdminLogin();
 			}
 		});
 		

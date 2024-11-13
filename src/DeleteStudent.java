@@ -35,12 +35,12 @@ public class DeleteStudent {
 		container.setLayout(new FlowLayout());
 		
 		container.add(segment);
-		container.add(logout);
 		container.add(header);
 		container.add(id);
 		container.add(i);
 		container.add(submit);
 		container.add(clear);
+		container.add(logout);
 		
 		frame.setVisible(true);
 		frame.setSize(500,500);
